@@ -198,3 +198,13 @@ return <h3>{emotjiToShow}</h3>
 }
 
 ```
+
+
+## Before we leave, another Big NONO
+
+We never call `setState` inside the render method of a class component. Why?
+Because you would get stuck in an infinite loop...
+
+Lets thing:
+
+If calling `this.setState` tells react to call the `render` method of a class component and, inside the render method we are calling the `this.setState` that will call the `render` method of that class component that, in term will, once again, call the `this.setState` and on and on.

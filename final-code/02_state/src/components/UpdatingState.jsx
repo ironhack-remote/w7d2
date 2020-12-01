@@ -15,6 +15,7 @@ export default class UpdatingState extends Component {
     return (
       <div>
         <h1>This button has been clicked {this.state.clicked} times</h1>
+        {/* here , once again, we pointing the onClick to the method definition and NOT calling the function directly */}
         <button onClick={this.increase}>Increase</button>
       </div>
     );
