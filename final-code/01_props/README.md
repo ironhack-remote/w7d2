@@ -35,6 +35,23 @@ function App() {
 
 ```
 
+Props can be any data type - Numbers, Arrays, Objects, Dates, Functions, Booleans - anything
+
+You might see code that looks like the following:
+
+```jsx
+<Button isCool>Noice</Button>
+```
+
+This, internally gets translated into:
+```jsx
+function Button(props) {
+   console.log(props) // {isCool: true}
+   // rest of component
+}
+```
+
+
 ## Props are responsible for a lot more than just styling changes. We will see more of it this afternoon when we talk and handle the topic of `state`. But React rerenders components EVERY time that either `state` or `props` change.
 
 ## How to access `props` in different kinds of components (Class vs Functional Components)
