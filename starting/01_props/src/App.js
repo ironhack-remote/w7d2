@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 /*  */
 
 // function App() {
@@ -32,6 +32,7 @@ function App() {
     genre: "The puns are stuck in an infinite loop",
     condition: "Truthy",
   };
+
   return (
     <div className="App">
       <Nav user={user} />
