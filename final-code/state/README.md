@@ -18,11 +18,13 @@ class ClassComponent extends React.Component {
 
   render() {
     return (
-      <h1>My age is {myAge}</h1>
+      <h1>My age is {this.myAge}</h1>
     )
   }
 }
 ```
+* Remember that `myAge` is a property of the class, therefore you need to add the `this.` in front of it. Like we did on the first module
+  
 
 The major difference between state and any internal property inside a class component or, for that matter, a `let` variable inside a functional component is that whenever React adds a component to the DOM it does it at a specific spot. Whenever an internal variable/ property and state is that React only rerenders a component whenever state updates, and not an internal value
 
