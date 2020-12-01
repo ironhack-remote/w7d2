@@ -32,7 +32,6 @@ class App extends React.Component {
 
   render() {
     const isCurrentYear = new Date().getFullYear() === this.state.currentYear;
-
     // console.log("isCurrentYear:", isCurrentYear);
 
     return (
